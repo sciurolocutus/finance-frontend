@@ -1,15 +1,17 @@
 <html>
 
 <head>
-    <script src="js/vue.js" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue-dev.js"></script>
 </head>
 
 <body>
     <div id="app">
-        {{ message }}
+        <app-nav :views="[{name: 'dashboard', url: 'dashboard'}, {name: 'words', url: 'verba'}]"></app-nav>
+        <transaction-list></transaction-list>
     </div>
 
-    <script src="js/index.js"></script>
+    <script src=" js/index.js "></script>
 </body>
 
 </html>
